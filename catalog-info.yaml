@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: orders
+  annotations:
+    github.com/project-slug: gy-org/orders
+    backstage.io/kubernetes-label-selector: 'app=orders'
+  description: orders created
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  # dependsOn:
+  #   - resource:crossplane-eks-demo-05
